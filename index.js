@@ -1,13 +1,14 @@
 var express = require('express');
 var app = express();
 var server = require('http').Server(app);
+// const port = 3000;
 
 //  Import files from source folder( css, js, assets)
-app.use('/css', express.static(__dirname + '/css'));
-app.use('/font', express.static(__dirname + '/font'));
-app.use('/img', express.static(__dirname + '/img'));
+app.use('/', express.static(__dirname + '/'));
 
 
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/index.html');
 });
+
+// app.listen(port, () => console.log(`Example app listening at http://localhost:${port}`))
