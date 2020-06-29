@@ -9,7 +9,6 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "socket.io": "^1.7.3"
   },
   "description": "Website design - Small project for high school assignment.",
   "repository": {
